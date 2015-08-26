@@ -5,6 +5,11 @@
         <h1>
           <%= @song.title %>
         </h1>
+        <a href="/songs/<%= @song.id %>/edit">Edit</a>
+        <!-- <form action="/songs/<%= @song.id %>" method="post">
+          <input type="hidden" name="_method" value="DELETE">
+          <input type="submit" value="Delete song">
+        </form> -->
       </div>
       <table class='table table-striped'>
         <tr>
